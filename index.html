@@ -1,0 +1,116 @@
+<!-- site -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>sales-generator</title>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+	<meta name="Keywords" content="" />
+	<meta name="Description" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+		
+	<link rel="stylesheet" media="screen" type="text/css" href="css/download-form.css" />
+	<link rel="stylesheet" media="screen" type="text/css" href="css/style.css" />
+</head>
+
+		
+<body>
+<!-- <div id="download-form-alert" class="download-form-alert-wrap">
+	<div class="download-form-alert-fixed">	
+		<div class="download-form-alert-pos">
+			<div class="download-form-alert-txt">Cпасибо, мы скоро свяжемся с Вами!</div>
+			<div class="download-form-button">
+				<input type="button" onclick="toggleAlert()" value="OK"  />
+			</div>
+		</div>
+	</div>	
+</div> -->
+
+<div id="main">
+
+<section class="content-wrap">
+
+<div class="content-pos">
+	
+	<div class="single-button" onclick="runOpen()"  > 
+		<span>Кликни</span>
+	</div>
+</div>					
+</section>	
+	
+	<div class="clearfix"></div>
+	<div class="request-quotation">	
+		<div id="m5" class="request-wrap screen-height">		
+			<form id="download-form" action="http://localhost:3000/send-email" method="post"> 
+				<div class="form-request-scroll">
+					<div class="form-request-wrap">
+						<div class="form-request-pos"> 
+							<div class="form-request-button-exit" onclick="runClose();"> 
+								<img class=" " src="images/cross-red.svg" alt="" />
+							</div> 														
+							
+							<div class="form-img-mobile">
+									<img class=" " src="images/main-mobile.jpg" alt="" >
+							</div>
+							<h1 class="form-request-title">
+									Получите набор файлов<br>для&nbsp;руководителя:
+							</h1>
+							<div class="form-img-desk">
+								<div class="form-img-1">
+									<img class=" " src="images/main.jpg" alt="" >
+								</div>								
+							</div>
+							<div class="form-left form-img-desk">								
+								<div class="form-img-2">
+									<img class=" " src="images/icons.png" alt="" >
+								</div>
+							</div>
+							<div class="form-right">								
+								<div class="form-request-input">	
+									<label>
+										<span class=" ">Введите Email для получения файлов:</span>
+										<input type="email" name="email_user" value="" placeholder="E-mail*" required />
+									</label>
+								</div>
+								<div class="form-request-input">	
+									<label>
+										<span class=" ">Введите телефон для подтверждения доступа:</span>
+										<input type="tel" name="tel" id="tel" data-inputmask="'mask': '+7 (999) 999-99-99'" placeholder="+7 (999) 999-99-99" required />
+									</label>
+								</div>
+								
+								<div class="form-request-button-submit">	
+									<button type="submit">Скачать файлы</button>
+								</div>	
+								<div class="form-request-files form-img-desk">
+										<span class=" ">PDF 4,7MB</span>
+										<span class=" "> DOC 0,8 MB</span>
+										<span class=" "> XLS 1,2 MB</span>
+								</div>
+							
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</form> 
+		</div>
+	</div>	
+	
+</div> 		
+	<script src="js/vanillaInputMask.js"></script> 
+	<script src="js/vanillaFormSubmit.js"></script> 
+	
+	<script > 
+		function runOpen() {		
+			var text1 = document.getElementById("m5"); 
+			text1.classList.add("txt-visible"); 
+		}
+		function runClose() {		
+			var text1 = document.getElementById("m5"); 
+			text1.classList.remove("txt-visible"); 
+		}
+	</script>	
+	
+</body>
+	
+</html>	
