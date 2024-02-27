@@ -14,7 +14,7 @@
 
 		
 <body>
-<!-- <div id="download-form-alert" class="download-form-alert-wrap">
+<div id="download-form-alert" class="download-form-alert-wrap">
 	<div class="download-form-alert-fixed">	
 		<div class="download-form-alert-pos">
 			<div class="download-form-alert-txt">Cпасибо, мы скоро свяжемся с Вами!</div>
@@ -23,7 +23,7 @@
 			</div>
 		</div>
 	</div>	
-</div> -->
+</div>
 
 <div id="main">
 
@@ -31,7 +31,7 @@
 
 <div class="content-pos">
 	
-	<div class="single-button" onclick="runOpen()"  > 
+	<div class="single-button" onclick="handleOpen()"  > 
 		<span>Кликни</span>
 	</div>
 </div>					
@@ -44,7 +44,7 @@
 				<div class="form-request-scroll">
 					<div class="form-request-wrap">
 						<div class="form-request-pos"> 
-							<div class="form-request-button-exit" onclick="runClose();"> 
+							<div class="form-request-button-exit" onclick="handleClose();"> 
 								<img class=" " src="images/cross-red.svg" alt="" />
 							</div> 														
 							
@@ -101,11 +101,11 @@
 	<script src="js/vanillaFormSubmit.js"></script> 
 	
 	<script > 
-		function runOpen() {		
+		function handleOpen() {		
 			var text1 = document.getElementById("m5"); 
 			text1.classList.add("txt-visible"); 
 		}
-		function runClose() {		
+		function handleClose() {		
 			var text1 = document.getElementById("m5"); 
 			text1.classList.remove("txt-visible"); 
 		}

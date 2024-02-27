@@ -1,19 +1,19 @@
 
-#form-send-file-alert{
+#download-form-alert{
 	/* display:block;*/
 	display:none; 
 }
-#form-send-file-alert.form-send-file-alert-visible{
+#download-form-alert.download-form-alert-visible{
 	display:block;
 	z-index: 99999999;
 }
 
-.form-send-file-alert-wrap{
+.download-form-alert-wrap{
 	position:relative;
 	width: auto;
 	height: auto;	
 }
-.form-send-file-alert-fixed{
+.download-form-alert-fixed{
 	position:fixed;
 	top: 0; left:0;
 	width: 100%;
@@ -21,7 +21,7 @@
 	background-color: rgba(0, 0, 0, 0.3);
 	z-index: 999999;
 }
-.form-send-file-alert-pos{
+.download-form-alert-pos{
 	position:absolute;
 	top: 0; bottom:0; left:0; right:0;
 	width:90%;
@@ -32,91 +32,10 @@
 	text-align:center;
 	background: #fff;	
 }
-.form-send-file-alert-txt{
+.download-form-alert-txt{
 	margin:0 auto;
 	font-size:22px;
 	text-transform: uppercase;
-}
-.form-send-file-button{
-	text-align:center;
-}
-.form-send-file-button input{	
-	width: 100px;
-	height: 40px;
-	margin:20px auto 20px auto;
-	
-	cursor: pointer;
-	color: #fff;
-	text-transform: uppercase;
-	text-align:center;
-	border: 0;
-	outline: none;
-	background: #3acc6f;
-}
-
-.form-send-file-wrap{
-	width:90%;
-	max-width:400px;
-	margin: 0 auto;
-	padding:30px;
-	font-family:sans-serif;
-	
-	background: grey;
-}
-.form-send-file-wrap h3{
-	padding:10px 0 20px 0;
-	text-align:center;
-}
-.form-send-file-txt-1{
-	margin:0 auto 20px auto;
-	font-size:14px;
-	text-align:center;
-}
-.form-send-file-item{
-	width:100%;
-	margin:0 auto 20px auto;
-}
-span.label-item{
-	display:inline-block;
-	width:86px;
-	font-size:14px;
-}
-.form-send-file-item textarea{
-	display:block;
-	width:380px;
-	margin:20px 0 0 0;
-	padding:10px;
-	font-size:14px;
-	resize: none;
-}
-.label-star{
-	color: red;
-}
-.form-send-file-item input{
-	padding:4px 10px;
-}
-.form-send-file-txt-2{
-	font-size:12px;
-	text-align:center;
-}
-
-.form-send-file-attach{
-	position:relative;
-	width:100%;
-	height: 70px;
-	padding: 0;
-	text-align:center;
-	background:#fff;
-}
-.form-send-file-attach label{
-	display:block;
-	width:100%;
-	height: 100%;
-}
-.form-send-file-attach input{
-	padding:0px;
-	border: 0;
-	text-align:center;
 }
 .main_input_file {
 	display: none;

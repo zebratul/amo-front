@@ -37,7 +37,6 @@ function mask(event) {
 
 document.addEventListener('DOMContentLoaded', function() {
     var input = document.querySelector("#tel");
-    console.log("input:",input); // Should not be null
 
     input.addEventListener("input", mask, false);
     input.addEventListener("focus", mask, false);
